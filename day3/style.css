@@ -1,0 +1,54 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.parent1 
+{
+    width: 600px;
+    height: 1750px;
+    border: 10px solid black;
+    margin: 90px;
+    /* position: relative; */
+}
+
+.parent2 
+{
+    width: 400px;
+    height: 500px;
+    border: 10px solid red;
+    margin: 60px;
+    
+}
+
+.one
+{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; */
+}
+
+.two
+{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: sticky;
+    top: 50px;
+    /* top: 400px;
+    left: 600px; */
+    
+}
+
+.three
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}

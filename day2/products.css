@@ -1,0 +1,76 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.products
+{
+    width: 100%;
+    background-color: gray;
+    padding: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product 
+{
+    width: 20%;
+    height: 400px;
+    background-color: red;
+}
+
+.pro1 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pro-child
+{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+}
+
+
+.one 
+{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin: 30px;
+    transition: 1s;
+}
+
+
+.one:hover
+{
+    background-color: red;
+    margin-left:100px;
+}
+
+.one:active 
+{
+    background-color: green;
+}
+
+input 
+{
+    margin: 100px;
+}
+
+input:focus
+{
+    border: 10px solid black;
+}
+
+
+
+.chk:checked
+{
+    width: 30px;
+    height: 30px;
+}

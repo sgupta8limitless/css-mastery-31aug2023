@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Effect</title>
+    <style>
+
+        .card 
+        {
+            height: 315px;
+            width: 237px;
+            background-color: red;
+            position: relative;
+            border-radius: 10px;
+            margin: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .img-wrapper
+        {
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            overflow: hidden;
+            border-radius: 10px;
+            position: absolute;
+        }
+
+        .img-wrapper img
+        {
+            width: 100%;
+            margin-top: -50px;
+        }
+
+        .movie-card
+        {
+            width: 350px;
+            height: 400px;
+            background-color: red;
+            position:absolute;
+            transform: scale(.6);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .card:hover .movie-card
+        {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .movie-card video 
+        {
+            width: 100%;
+            position: absolute;
+        }
+
+        .movie-card img 
+        {
+            width: 100%;
+            position: absolute;
+            transition: .3s;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="card">
+
+        <div class="img-wrapper">
+            <img src="./images/mov-4.webp" alt="">
+        </div>
+
+        <div class="movie-card" id="movie-card">
+           
+            <video src="./images/video.mp4" id="vid" ></video>
+            <img src="./images/des-4.webp" id="im" alt="">
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        document.getElementById("movie-card").addEventListener("mouseenter",function(){
+
+            setTimeout(function(){
+
+                    document.getElementById("im").style.opacity=0;
+                    document.getElementById("vid").play();
+
+
+            },5000)
+
+        })
+
+
+    </script>
+
+    
+</body>
+</html>
